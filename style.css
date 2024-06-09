@@ -1,0 +1,383 @@
+:root
+{
+    --blue : #00ffae;
+    --aqua : #62f4f4;
+    --green : #00f2ff;
+    --white : #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background: #132139;
+    color: var(--white);
+}
+
+header
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #67eef8;
+    padding: 1px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px;
+}
+
+.Logo {
+    color: #233a3e;
+    text-decoration: none;
+    font-size: 2.0em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.Logo span {
+    color: #096282e1;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+header ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+header ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.cari {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+input {
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    width: 60%;
+    height: 35px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.slider{
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    height: 500px;
+}
+
+.slide img{
+    width: 800px;
+    height: 400px;
+    border-radius: 40px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual.btn {
+    margin-right: 50px ;
+}
+
+.manual-btn:hover {
+    background: #ffffff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto div {
+    border: 20px solid #00f2ff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 100px;
+}
+
+/*menu top up*/
+.TopUp {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 9px;
+    gap: 1rem;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.link-games>a>img { 
+    background-color: none;
+    padding: 8px;
+    text-align: center;
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.link-games {
+    background-color: none;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+/*bagian footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #000000;
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3{
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer .footer-center{
+    width: 35%;
+}
+
+
+.footer .footer-center i{
+    background-color: #000000;
+    color: #fff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.bx-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p{ 
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+
+
+.footer .footer-center p span{
+    display: block;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.footer .footer-center p a{
+    color: #00ffae;
+    text-decoration: none;
+}
+
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about{
+    line-height: 20px;
+    color: #92999f;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-about span{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media{
+    margin-top: 25px;
+}
+
+.footer .footer-media a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover{
+    background-color: #5ccfe3;
+}
+
+.footer .footer-copyright{
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+}
+
+@media (max-width: 880px) {
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+    }
+}

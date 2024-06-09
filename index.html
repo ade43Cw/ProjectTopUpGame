@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ade Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo"><img src="" alt="">Ade <span>STORE</span></a><p>Website top-up aman, tercepat dan terpercaya</p>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#PRODUCT">PRODUCT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="cari">
+            <input type="search" placeholder="search games">
+        </div>
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slide image start-->
+            <div class="slide first">
+                <img src="gambar/slider2.png" alt="">
+                <h1>Ade Store</h1>
+            </div>
+            <div class="slide">
+                <img src="gambar/games-pubg.jpg" alt="" >
+            </div>
+            <div class="slide">
+                <img src="gambar/ff.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="gambar/82528-mobile-legends.jpg" alt="" >
+            </div>
+            <!--slide image end-->
+
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>   
+            <!--automatic navigation end-->
+        </div> 
+
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let counter="1";
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        },3000);
+    </script>
+
+    <!--Menu top up-->
+    <h1 id="PRODUCT">POPULER</h1>
+    <section class="TopUp">
+        <div class="link-games">
+            <a href="datagames/ff.html">
+                <img src="gambar/logoff.png">
+            </a>
+            <h3>FREE FIRE </h3>
+        </div>
+        <div class="link-games">
+            <a href="datagames/pubg.html">
+                <img src="gambar/logopubg.jpg">
+            </a>
+            <h3>PUBG Mobile</h3>
+        </div>
+        <div class="link-games">
+            <a href="datagames/ml.html">
+                <img src="gambar/logoml.jpg">
+            </a>
+            <h3>Mobile Legeds</h3>
+        </div>
+    </section>
+    <h1>Top Up Semua Games</h1>
+    <section class="TopUp">
+        <div class="link-games">
+            <a href="datagames/aov.html">
+                <img src="gambar/logoaov.jpg">
+            </a>
+            <h3>Arena Of Valor : AOV</h3>
+        </div>
+        <div class="link-games">
+            <a href="datagames/coc.html">
+                <img src="gambar/logococ.jpg">
+            </a>
+            <h3>Clash Of Clan : COC</h3>
+        </div>
+        <div class="link-games">
+            <a href="datagames/pubg.html">
+                <img src="gambar/logopubg.jpg">
+            </a>
+            <h3>PUBG Mobie</h3>
+        </div>
+        <div class="link-games">
+            <a href="datagames/ff.html">
+                <img src="gambar/logoff.png">    
+            </a>
+            <h3>Free Fire</h3>
+        </div>
+        <div class="link-games">
+            <a href="datagames/ml.html">
+                <img src="gambar/logoml.jpg">    
+            </a>
+            <h3>Mobile Legends</h3>
+        </div>
+    </section>
+    <section class="TopUp">
+        <div class="link-games">
+            <a href="datagames/cod.html">
+                <img src="gambar/logocod.jpg">
+            </a>
+            <h3>Call Of Duty : COD</h3>
+        </div>
+        <div class="link-games">
+            <a href="datagames/genshin.html">
+                <img src="gambar/logogenshin.jpg">
+            </a>
+            <h3>Genshin Impact</h3>
+        </div>
+    </section>
+
+    <!--footer start-->
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Payment</h3>
+            <div class="credit-cards">
+                <img src="gambar/visa.png" alt="">
+                <img src="gambar/dana.jpg" alt="">
+                <img src="gambar/bca.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class='bx bx-map'></i>
+                <p><span>Indonesia</span> Bali, Badung</p>
+            </div>
+            <div>
+                <i class='bx bxl-whatsapp'></i>
+                <p>+62 857-3719-0851</p>
+            </div>
+            <div>
+                <i class='bx bx-envelope'></i>
+                <p><a href="#"> adepermana@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About</span>
+                Di Store ini kita menjual seperti diamond ML, diamond FF,
+                UC PUBG, dan masih banyak lagi. Silakan subscribe channel
+                ini, jangan lupa like dan comment, agar channel ini semakin
+                berkembang.
+            </p>
+
+            <div class="footer-media">
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; Copyright 2023 by Ade STORE</p>
+        </div>
+    </footer>
+    <!--footer end-->
+</body>
+</html>

@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background: #132139;
+    color: var(--white);
+}
+
+header
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #67eef8;
+    padding: 1px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px;
+}
+
+.Logo {
+    color: #233a3e;
+    text-decoration: none;
+    font-size: 2.0em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.Logo span {
+    color: #096282e1;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+header ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+header ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.slide img{
+    margin-top: 20px;
+    margin-left: 8%;
+    height: 8%;
+    width: 80%;
+}
+
+.ff-topup{
+    margin-top: 50px;
+    margin-left: 4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorial{
+    flex: 1 1 30rem;
+    background: rgb(86, 86, 86);
+    padding: 3rem 2rem 4rem;
+    border-radius: 1rem;
+    border: .2rem solid aqua;
+}
+
+.tutorial .atas{
+    display: flex;
+    gap: .3rem;
+}
+
+.tutorial .atas img{
+    display: flex;
+    border-radius: 6%;
+    width: 130px;
+    height: 130px;
+}
+
+.tutorial .atas h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tutorial .atas h3{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.tutorial .tutorial-ff h2{
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.tutorial .tutorial-ff p{
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.isi-data{
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 2rem;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.data{
+    flex: 1 1 30rem;
+    background: rgb(86, 86, 86);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: .2rem solid aqua;
+    width: 40%;
+}
+
+.data .judul-data{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.data .input-box{
+    padding: .5rem 0 ;
+}
+
+.data .input-box input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 4rem;
+}
+
+.data .text-data p{
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.pilihan{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 2rem;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.pilihan-item{
+    flex: 1 1 30rem;
+    background: rgb(86, 86, 86);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: .2rem solid aqua;
+    width: 80%;
+}
+
+.pilihan-item .judul-data{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.item {
+    margin-top: 10px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+}
+
+.item button{
+    background-color: #61ccf7;
+    width: 30%;
+    height: 5%;
+    margin: 6px;
+    border-radius: 1rem;
+}
+
+.item button h3{
+    color: #ffffff;
+}
+
+.item button p{
+    color: #ffffff;
+}
+
+.metode p{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.metode input{
+    margin-left: 1rem;
+    width: 80%;
+    height: 2rem;
+    border-radius: 4rem  0  0 4rem ;
+}
+
+.metode button{
+    width: 12%;
+    height: 2rem;
+    border-radius: 0 4rem 4rem 0;
+    background-color : white;
+}
+
+.buy-order {
+    margin: 5px;
+    display: grid;
+}
+
+.dana button {
+    margin: 10px;
+    width: 97%;
+    height: 8vh;
+    border: 1px solid #025c61;
+    border-radius: 4rem;
+}
+
+.dana button img {
+    padding: 10px;
+    width: 12%;
+    height: 100%;
+    margin-right: 85%;
+}
+
+.next{
+    justify-content: center;
+    display: flex;
+}
+
+.next-test{
+    display: flex;
+}
+
+.tentang{
+    margin-left: 5%;
+    width: 30%;
+}
+
+.beli{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 2rem;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.beli .beli-item{
+    flex: 1 1 30rem;
+    background: rgb(86, 86, 86);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: .2rem solid aqua;
+    width: 80%;
+}
+
+.beli-item .judul-data{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.beli-item .input-box{
+    padding: .5rem 0 ;
+}
+
+.beli-item .input-box input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 4rem;
+}
+
+.beli-item .input-box p{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.beli-item button{
+    height: 2.5rem;
+    width: 20%;
+    border-radius: 2rem;
+    background-color: #61ccf7;
+    color: #ffffff;
+}
+
+/*bagian footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #000000;
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3{
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer .footer-center{
+    width: 35%;
+}
+
+
+.footer .footer-center i{
+    background-color: #000000;
+    color: #fff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.bx-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p{ 
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+
+
+.footer .footer-center p span{
+    display: block;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.footer .footer-center p a{
+    color: #00ffae;
+    text-decoration: none;
+}
+
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about{
+    line-height: 20px;
+    color: #92999f;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-about span{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media{
+    margin-top: 25px;
+}
+
+.footer .footer-media a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover{
+    background-color: #5ccfe3;
+}
+
+.footer .footer-copyright{
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+}
+
+@media (max-width: 880px) {
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+    }
+}
